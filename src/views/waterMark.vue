@@ -7,12 +7,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import WaterMark from '@/utils/waterMark';
-// import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-@Component({
-  components: {
-    // HelloWorld,
-  },
-})
+@Component
 export default class WaterMarkVue extends Vue {
   public waterMark: any;
   public mounted() {
@@ -23,6 +18,7 @@ export default class WaterMarkVue extends Vue {
     //   canvasHeight: 80,
     //   canvasWidth: 600,
     // };
+    const a = 1;
     waterMark.setMark();
     this.waterMark = waterMark;
   }
