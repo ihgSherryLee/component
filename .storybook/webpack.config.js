@@ -1,5 +1,6 @@
 const vueConfig = require('@vue/cli-service/webpack.config.js');
 
+
 module.exports = async ({ config }) => {
   return {
     ...config,
